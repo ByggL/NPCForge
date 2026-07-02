@@ -1,0 +1,6 @@
+{
+  "key": "race",
+  "dependsOn": [],
+  "options": ["defaultRaces"],
+  "rules": []
+}

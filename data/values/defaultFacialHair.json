@@ -1,0 +1,7 @@
+[
+  { "value": "none", "weight": 30 },
+  { "value": "beard_full", "weight": 15, "pools": ["northern", "savage"] },
+  { "value": "mustache", "weight": 10, "pools": ["french", "noble"] },
+  { "value": "stubble", "weight": 25 },
+  { "value": "goatee", "weight": 20, "pools": ["noble"] }
+]

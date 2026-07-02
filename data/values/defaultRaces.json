@@ -1,0 +1,7 @@
+[
+  { "value": "human", "weight": 30 },
+  { "value": "alfar", "weight": 20, "pools": ["shem"] },
+  { "value": "dvergr", "weight": 17, "pools": ["shem"] },
+  { "value": "shouren", "weight": 15, "pools": ["shem"] },
+  { "value": "concilian", "weight": 15, "pools": ["shem"] }
+]

@@ -1,0 +1,7 @@
+[
+  { "value": "male", "weight": 30 },
+  { "value": "female", "weight": 30 },
+  { "value": "non-binary", "weight": 10 },
+  { "value": "double-body", "weight": 5 },
+  { "value": "double-soul", "weight": 5 }
+]

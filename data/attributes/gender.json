@@ -1,0 +1,14 @@
+{
+  "key": "gender",
+  "dependsOn": ["race"],
+  "options": ["defaultGender"],
+  "rules": [
+    {
+      "when": { "culture": "concilian" },
+      "effect": {
+        "type": "reweight",
+        "multiply": { "female": 2.5, "double-body": 1.3 }
+      }
+    }
+  ]
+}
