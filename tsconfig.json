@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "outDir": "dist",
+    "sourceMap": false,
+    "rootDir": "./src",
+    "allowJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": [],
+    "lib": ["es2022"]
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.spec.ts"]
+}
