@@ -1,7 +1,7 @@
 {
   "key": "gender",
   "dependsOn": ["race"],
-  "options": ["defaultGender"],
+  "options": ["default"],
   "rules": [
     {
       "when": { "culture": "concilian" },

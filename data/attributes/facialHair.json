@@ -1,7 +1,7 @@
 {
   "key": "facialHair",
   "dependsOn": ["gender", "race", "age"],
-  "options": ["defaultFacialHair"],
+  "options": ["default"],
   "rules": [
     {
       "when": { "gender": "female" },
