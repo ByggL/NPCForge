@@ -1,15 +1,13 @@
 import { Attribute, Option, Rule } from "./schemas/attribute.schema";
 
-type AttributeKey = string;
-
 export type AttributeOptions = {
   attribute: Attribute;
   options: Record<string, Option[]>;
 };
 
 export class AttributeWithOptions {
-  key: AttributeKey;
-  dependsOn: AttributeKey[];
+  key: string;
+  dependsOn: string[];
   options: string[];
   rules: Rule[];
   optionsValues: Option[]; // all options stored as flat list, options coming from specifically names JSON file (ie. not "default") will have the specific name as bonus pool
@@ -44,5 +42,12 @@ export class AttributeWithOptions {
   addOption(option: Option) {
     if (!this.getOption(option.value)) this.optionsValues.push(option);
     else console.log("This value already exists in the options.");
+  }
+
+  toString() {
+    let attributeAsString = "";
+    attributeAsString += "key: " + this.key;
+    attributeAsString += "depends on these attributes: " + this.dependsOn.toString();
+    attributeAsString += "imports these options: " + this.options.toString();
   }
 }
