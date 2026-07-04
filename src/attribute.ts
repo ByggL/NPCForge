@@ -1,3 +1,4 @@
+import { conditionToString, effectToString } from "./printer";
 import { Attribute, Option, Rule } from "./schemas/attribute.schema";
 
 export type AttributeOptions = {
@@ -44,10 +45,33 @@ export class AttributeWithOptions {
     else console.log("This value already exists in the options.");
   }
 
-  toString() {
-    let attributeAsString = "";
-    attributeAsString += "key: " + this.key;
-    attributeAsString += "depends on these attributes: " + this.dependsOn.toString();
-    attributeAsString += "imports these options: " + this.options.toString();
+  toString(): string {
+    const lines: string[] = [];
+
+    lines.push(`${this.key}`);
+    lines.push(`  dependsOn: [${this.dependsOn.join(", ") || "—"}]`);
+    lines.push(`  options: [${this.options.join(", ")}]`);
+
+    if (this.rules.length === 0) {
+      lines.push(`  rules: none`);
+    } else {
+      lines.push(`  rules:`);
+      this.rules.forEach((rule, i) => {
+        lines.push(`    [${i}] when ${conditionToString(rule.when)}`);
+        lines.push(`        → ${effectToString(rule.effect)}`);
+      });
+    }
+
+    if (this.optionsValues) {
+      lines.push(`  option values:`);
+      this.optionsValues.forEach((option) => {
+        let optionString = `    - ${option.value}`;
+        if (option.weight) optionString += ` (${option.weight})`;
+        if (option.pools) optionString += ` [${option.pools.toString()}]`;
+        lines.push(optionString);
+      });
+    }
+
+    return lines.join("\n");
   }
 }
