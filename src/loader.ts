@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import { join } from "path";
 import { AttributeWithOptions } from "./attribute";
-import { Attribute, AttributeSchema, Option } from "./schemas/attribute.schema";
+import { Attribute, AttributeSchema, Option, OptionFileSchema } from "./schemas/attribute.schema";
 
 function readAndParseJsonFile(filename: string) {
   const jsonData = fs.readFileSync(filename, "utf-8");
@@ -16,7 +16,7 @@ export function loadAttributes(dir: string): Attribute[] {
     const result = AttributeSchema.safeParse(raw);
 
     if (!result.success) {
-      throw new Error(`Attribut invalide dans ${file}:\n${result.error.toString()}`);
+      throw new Error(`ATTRIBUTS : Attribut invalide dans ${file}:\n${result.error.toString()}`);
     }
     return result.data;
   });
@@ -39,7 +39,15 @@ const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.sl
 export function populateOptions(attributeInstances: Record<string, AttributeWithOptions>) {
   Object.values(attributeInstances).forEach((attributeInstance: AttributeWithOptions) => {
     attributeInstance.options.forEach((optionRequest) => {
-      const optionsGroup: Option[] = readAndParseJsonFile(join(process.cwd(), `/src/data/options/${optionRequest}${capitalize(attributeInstance.key)}.json`));
+      const filename = `${optionRequest}${capitalize(attributeInstance.key)}.json`;
+      const raw = JSON.parse(fs.readFileSync(join(process.cwd(), `/src/data/options/${filename}`), "utf-8"));
+      const result = OptionFileSchema.safeParse(raw);
+
+      if (!result.success) {
+        throw new Error(`OPTIONS : Option invalide dans ${filename}:\n${result.error.toString()}`);
+      }
+
+      const optionsGroup: Option[] = result.data || [];
 
       optionsGroup.forEach((option) => {
         option.pools ? option.pools.push(optionRequest) : (option.pools = [optionRequest]);

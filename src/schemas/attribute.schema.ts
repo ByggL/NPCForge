@@ -66,6 +66,7 @@ export const AttributeSchema = z.object({
 });
 
 export const AttributeFileSchema = z.array(AttributeSchema);
+export const OptionFileSchema = z.array(OptionRefSchema);
 
 // Types inférés — remplacent tes types manuels, garantit zéro dérive schéma/type
 export type Condition = z.infer<typeof ConditionSchema>;

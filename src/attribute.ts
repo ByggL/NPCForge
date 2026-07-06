@@ -6,6 +6,8 @@ export type AttributeOptions = {
   options: Record<string, Option[]>;
 };
 
+export type AttributeGroup = Record<string, AttributeWithOptions>;
+
 export class AttributeWithOptions {
   key: string;
   dependsOn: string[];
