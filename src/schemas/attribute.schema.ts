@@ -16,9 +16,10 @@ const ConditionValue = z.union([
 
 export const ConditionSchema = z.record(z.string(), ConditionValue);
 
-// --- Effect (discriminated union sur "type") ---
+const OptionValueSchema = z.union([z.string(), z.number(), z.boolean()]);
+
 const OptionRefSchema = z.object({
-  value: z.string(),
+  value: OptionValueSchema,
   weight: z.number().positive().optional(),
   pools: z.array(z.string()).optional(),
 });
@@ -74,3 +75,4 @@ export type Effect = z.infer<typeof EffectSchema>;
 export type Rule = z.infer<typeof RuleSchema>;
 export type Attribute = z.infer<typeof AttributeSchema>;
 export type Option = z.infer<typeof OptionRefSchema>;
+export type OptionValue = z.infer<typeof OptionValueSchema>;

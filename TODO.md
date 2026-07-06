@@ -1,7 +1,10 @@
 - Fonction `evaluateDependencies`, qui :
-  - crée un arbre de dépendances pour déterminer l'ordre de génération de chaque attribut
-  - s'assure qu'il n'y a pas de dépendances circulaires
+  - crée un arbre de dépendances pour déterminer l'ordre de génération de chaque attribut ✅
+  - s'assure qu'il n'y a pas de dépendances circulaires ✅
 - petit printer de test qui crée les instances et print leur contenu dans la console (pour voir si tout se crée comme il faut) ✅
 - schémas Zod pour les JSON (comme ça on a une structure imposée qui se gère toute seule) ✅
 - appliquer le schéma Zod au parsing des fichiers d'options ✅
-- belle fonction `matchesCondition` qui prend une condition d'un attribut et la compare à ce qui a déjà été généré pour dire si on applique l'effet lié ou pas
+- setup le contexte de génération (en gros qu'est ce qui a déjà été généré et qu'est ce qui reste à générer) => important pour les règles d'attributs qui ont besoin de savoir ce qu'il y a déjà. ✅ (basique)
+- processing des règles d'attribut en fonction du contexte
+  - belle fonction `matchesCondition` qui prend une condition d'un attribut et la compare à ce qui a déjà été généré pour dire si on applique l'effet lié ou pas
+  - fonction `applyEffect(nom_effet, blablabla)` qui applique un effet donné sur l'attribut quand la condition correspondante passe
