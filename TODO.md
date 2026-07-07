@@ -5,6 +5,7 @@
 - schémas Zod pour les JSON (comme ça on a une structure imposée qui se gère toute seule) ✅
 - appliquer le schéma Zod au parsing des fichiers d'options ✅
 - setup le contexte de génération (en gros qu'est ce qui a déjà été généré et qu'est ce qui reste à générer) => important pour les règles d'attributs qui ont besoin de savoir ce qu'il y a déjà. ✅ (basique)
-- processing des règles d'attribut en fonction du contexte
+- processing des règles d'attribut en fonction du contexte ✅
   - belle fonction `matchesCondition` qui prend une condition d'un attribut et la compare à ce qui a déjà été généré pour dire si on applique l'effet lié ou pas
   - fonction `applyEffect(nom_effet, blablabla)` qui applique un effet donné sur l'attribut quand la condition correspondante passe
+- TESTER TOUT CA

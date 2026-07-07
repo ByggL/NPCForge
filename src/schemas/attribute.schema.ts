@@ -4,7 +4,6 @@ import { z } from "zod";
 const ConditionValue = z.union([
   z.string(),
   z.number(),
-  z.boolean(),
   z
     .object({
       lt: z.number().optional(),
@@ -16,7 +15,7 @@ const ConditionValue = z.union([
 
 export const ConditionSchema = z.record(z.string(), ConditionValue);
 
-const OptionValueSchema = z.union([z.string(), z.number(), z.boolean()]);
+const OptionValueSchema = z.union([z.string(), z.number()]);
 
 const OptionRefSchema = z.object({
   value: OptionValueSchema,
@@ -36,7 +35,7 @@ export const EffectSchema = z.discriminatedUnion("type", [
   }),
   z.object({
     type: z.literal("override"),
-    value: z.union([z.string(), z.number(), z.boolean()]),
+    value: z.union([z.string(), z.number()]),
   }),
   z.object({
     type: z.literal("add_options"),
