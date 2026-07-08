@@ -1,0 +1,6 @@
+{
+  "key": "mouth",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

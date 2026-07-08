@@ -1,0 +1,6 @@
+{
+  "key": "eyebrows",
+  "dependsOn": ["hairColor", "gender"],
+  "options": ["default"],
+  "rules": []
+}

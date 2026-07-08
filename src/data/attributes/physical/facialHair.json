@@ -1,0 +1,39 @@
+{
+  "key": "facialHair",
+  "dependsOn": ["gender", "race"],
+  "options": ["default"],
+  "rules": [
+    {
+      "when": {
+        "gender": "female"
+      },
+      "effect": {
+        "type": "override",
+        "value": "none"
+      }
+    },
+    {
+      "when": {
+        "age": {
+          "lt": 16
+        }
+      },
+      "effect": {
+        "type": "override",
+        "value": "none"
+      }
+    },
+    {
+      "when": {
+        "race": "orc"
+      },
+      "effect": {
+        "type": "reweight",
+        "multiply": {
+          "beard_full": 2.5,
+          "stubble": 1.3
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "key": "lifeRhythm",
+  "dependsOn": ["occupation"],
+  "options": ["default"],
+  "rules": []
+}

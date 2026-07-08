@@ -1,0 +1,6 @@
+{
+  "key": "hobbies",
+  "dependsOn": ["socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

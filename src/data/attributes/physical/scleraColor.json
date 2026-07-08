@@ -1,0 +1,6 @@
+{
+  "key": "scleraColor",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

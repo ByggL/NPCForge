@@ -1,0 +1,6 @@
+{
+  "key": "irisColor",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

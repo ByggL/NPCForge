@@ -1,0 +1,6 @@
+{
+  "key": "eyeShape",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

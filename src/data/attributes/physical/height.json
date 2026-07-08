@@ -1,0 +1,6 @@
+{
+  "key": "height",
+  "dependsOn": ["race", "gender", "age"],
+  "options": ["default"],
+  "rules": []
+}

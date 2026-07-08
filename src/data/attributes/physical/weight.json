@@ -1,0 +1,6 @@
+{
+  "key": "weight",
+  "dependsOn": ["build", "height"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "facialMarks",
+  "dependsOn": ["age"],
+  "options": ["default"],
+  "rules": []
+}

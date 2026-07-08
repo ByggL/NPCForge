@@ -1,0 +1,6 @@
+{
+  "key": "hairStyle",
+  "dependsOn": ["gender", "hairColor", "age", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

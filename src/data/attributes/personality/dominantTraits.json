@@ -1,0 +1,6 @@
+{
+  "key": "dominantTraits",
+  "dependsOn": ["alignment"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,18 @@
+{
+  "key": "tattoos",
+  "dependsOn": ["age", "gender", "socialStatus"],
+  "options": ["default"],
+  "rules": [
+    {
+      "when": {
+        "age": {
+          "lt": 16
+        }
+      },
+      "effect": {
+        "type": "override",
+        "value": "none"
+      }
+    }
+  ]
+}

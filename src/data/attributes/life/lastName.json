@@ -1,0 +1,6 @@
+{
+  "key": "lastName",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

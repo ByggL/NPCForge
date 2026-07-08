@@ -1,0 +1,6 @@
+{
+  "key": "residence",
+  "dependsOn": ["occupation", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "piercings",
+  "dependsOn": ["gender", "socialOrigin", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

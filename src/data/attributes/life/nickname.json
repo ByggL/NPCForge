@@ -1,0 +1,6 @@
+{
+  "key": "nickname",
+  "dependsOn": ["dominantTraits", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

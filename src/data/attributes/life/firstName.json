@@ -1,0 +1,6 @@
+{
+  "key": "firstName",
+  "dependsOn": ["gender", "race", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

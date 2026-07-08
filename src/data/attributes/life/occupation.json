@@ -1,0 +1,18 @@
+{
+  "key": "occupation",
+  "dependsOn": ["age", "gender", "socialStatus"],
+  "options": ["default"],
+  "rules": [
+    {
+      "when": {
+        "age": {
+          "lt": 14
+        }
+      },
+      "effect": {
+        "type": "override",
+        "value": "none"
+      }
+    }
+  ]
+}

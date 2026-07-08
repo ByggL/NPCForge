@@ -1,0 +1,6 @@
+{
+  "key": "birthplace",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

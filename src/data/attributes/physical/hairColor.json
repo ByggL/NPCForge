@@ -1,0 +1,21 @@
+{
+  "key": "hairColor",
+  "dependsOn": ["race", "age"],
+  "options": ["default"],
+  "rules": [
+    {
+      "when": {
+        "age": {
+          "gt": 60
+        }
+      },
+      "effect": {
+        "type": "reweight",
+        "multiply": {
+          "grey": 2,
+          "white": 2.5
+        }
+      }
+    }
+  ]
+}

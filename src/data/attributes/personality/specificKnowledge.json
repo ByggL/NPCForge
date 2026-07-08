@@ -1,0 +1,6 @@
+{
+  "key": "specificKnowledge",
+  "dependsOn": ["occupation"],
+  "options": ["default"],
+  "rules": []
+}

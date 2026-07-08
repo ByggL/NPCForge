@@ -1,0 +1,6 @@
+{
+  "key": "eatingHabits",
+  "dependsOn": ["socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

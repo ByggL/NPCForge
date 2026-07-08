@@ -1,0 +1,6 @@
+{
+  "key": "posture",
+  "dependsOn": ["age", "physicalStrength"],
+  "options": ["default"],
+  "rules": []
+}

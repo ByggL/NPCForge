@@ -1,0 +1,6 @@
+{
+  "key": "nose",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "build",
+  "dependsOn": ["race", "gender", "age"],
+  "options": ["default"],
+  "rules": []
+}

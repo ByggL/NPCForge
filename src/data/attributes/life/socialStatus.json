@@ -1,0 +1,6 @@
+{
+  "key": "socialStatus",
+  "dependsOn": ["socialOrigin", "age"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "flaws",
+  "dependsOn": ["alignment"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "makeup",
+  "dependsOn": ["gender", "socialStatus"],
+  "options": ["default"],
+  "rules": []
+}

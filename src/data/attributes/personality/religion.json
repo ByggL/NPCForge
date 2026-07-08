@@ -1,0 +1,6 @@
+{
+  "key": "religion",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

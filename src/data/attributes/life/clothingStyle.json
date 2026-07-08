@@ -1,0 +1,6 @@
+{
+  "key": "clothingStyle",
+  "dependsOn": ["socialStatus", "gender", "occupation"],
+  "options": ["default"],
+  "rules": []
+}

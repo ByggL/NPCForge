@@ -1,0 +1,6 @@
+{
+  "key": "physicalStrength",
+  "dependsOn": ["gender", "age", "build"],
+  "options": ["default"],
+  "rules": []
+}

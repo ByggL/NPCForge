@@ -1,0 +1,6 @@
+{
+  "key": "distinctiveMarks",
+  "dependsOn": ["age"],
+  "options": ["default"],
+  "rules": []
+}

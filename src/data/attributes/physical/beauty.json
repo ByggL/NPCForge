@@ -1,0 +1,6 @@
+{
+  "key": "beauty",
+  "dependsOn": ["age"],
+  "options": ["default"],
+  "rules": []
+}

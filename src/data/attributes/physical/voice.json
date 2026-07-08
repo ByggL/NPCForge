@@ -1,0 +1,6 @@
+{
+  "key": "voice",
+  "dependsOn": ["gender", "age"],
+  "options": ["default"],
+  "rules": []
+}

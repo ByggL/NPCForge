@@ -1,0 +1,6 @@
+{
+  "key": "faceShape",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

@@ -1,0 +1,6 @@
+{
+  "key": "skinColor",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

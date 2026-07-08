@@ -1,0 +1,6 @@
+{
+  "key": "socialBehavior",
+  "dependsOn": ["temperament", "alignment"],
+  "options": ["default"],
+  "rules": []
+}

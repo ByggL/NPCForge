@@ -1,0 +1,6 @@
+{
+  "key": "ears",
+  "dependsOn": ["race"],
+  "options": ["default"],
+  "rules": []
+}

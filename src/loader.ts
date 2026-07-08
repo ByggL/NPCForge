@@ -8,16 +8,33 @@ function readAndParseJsonFile(filename: string) {
   return JSON.parse(jsonData.toString());
 }
 
-export function loadAttributes(dir: string): Attribute[] {
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
+function listFiles(dir: string): string[] {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
 
-  return files.flatMap((file) => {
-    const raw = JSON.parse(fs.readFileSync(join(dir, file), "utf-8"));
+  return entries.flatMap((entry) => {
+    const fullPath = join(dir, entry.name);
+    return entry.isDirectory() ? listFiles(fullPath) : [fullPath];
+  });
+}
+
+export function loadAttributes(dir: string): Attribute[] {
+  const files = listFiles(dir).filter((f) => f.endsWith(".json"));
+
+  const correctFiles = files.filter((file) => {
+    const index = file.lastIndexOf("\\");
+    const defaultOptionsFilename = `default${capitalize(file.substring(index + 1))}`;
+    // console.log(defaultOptionsFilename);
+    return fs.existsSync(join(process.cwd(), `/src/data/options/${defaultOptionsFilename}`));
+  });
+
+  return correctFiles.flatMap((file) => {
+    const raw = JSON.parse(fs.readFileSync(file, "utf-8"));
     const result = AttributeSchema.safeParse(raw);
 
     if (!result.success) {
       throw new Error(`ATTRIBUTS : Attribut invalide dans ${file}:\n${result.error.toString()}`);
     }
+
     return result.data;
   });
 }

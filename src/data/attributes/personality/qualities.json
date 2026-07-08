@@ -1,0 +1,6 @@
+{
+  "key": "qualities",
+  "dependsOn": ["alignment"],
+  "options": ["default"],
+  "rules": []
+}
