@@ -8,4 +8,7 @@
 - processing des règles d'attribut en fonction du contexte ✅
   - belle fonction `matchesCondition` qui prend une condition d'un attribut et la compare à ce qui a déjà été généré pour dire si on applique l'effet lié ou pas
   - fonction `applyEffect(nom_effet, blablabla)` qui applique un effet donné sur l'attribut quand la condition correspondante passe
-- TESTER TOUT CA
+- TESTER TOUT CA => CA FONCTIONNE LE POC FONCTIONNE YIPPEE ✅
+- remplir les JSON d'attributs et d'options (ouille)
+- ajouter option "not" dans les conditions
+- printer console un peu plus joli pour les picks

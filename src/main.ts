@@ -1,11 +1,12 @@
 import { AttributeGroup } from "./attribute";
 import { buildAttributesProcessingOrder } from "./dependencies";
-import { GenerationContext } from "./generate";
+import { generateAttribute, GenerationContext } from "./generate";
 import { createAttributeInstances, populateOptions } from "./loader";
+import { printMap } from "./printer";
 
 function main() {
-  var ATTRIBUTES: AttributeGroup;
-  var GENERATION_CONTEXT: GenerationContext = new Map();
+  let ATTRIBUTES: AttributeGroup;
+  let GENERATION_CONTEXT: GenerationContext = new Map();
 
   ATTRIBUTES = createAttributeInstances();
 
@@ -14,4 +15,11 @@ function main() {
   const processingOrder = buildAttributesProcessingOrder(ATTRIBUTES);
 
   // start processing here
+  for (const attributeToProcess of processingOrder) {
+    generateAttribute(ATTRIBUTES[attributeToProcess], GENERATION_CONTEXT);
+  }
+
+  printMap(GENERATION_CONTEXT);
 }
+
+main();

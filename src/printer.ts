@@ -56,3 +56,11 @@ export function printDependencyTree(graph: DependencyGraph): void {
     printNode(root.key, "", index === roots.length - 1, new Set());
   });
 }
+
+export function printMap(map: Map<string, string | number>) {
+  let obj: { [key: string]: string | number } = {};
+
+  map.forEach((value, key) => (obj[key] = value));
+
+  console.log(JSON.stringify(obj, null, 4));
+}
