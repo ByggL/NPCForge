@@ -13,3 +13,4 @@
 - ignorer les attributs qui n'ont pas de fichier(s) d'options correspondant (temporaire) ✅
 - ajouter option "not" dans les conditions
 - printer console un peu plus joli pour les picks
+- gérer les attributs qui n'ont pas juste des options à pick (par exemple l'âge qui est un randint avec âge maxi)
