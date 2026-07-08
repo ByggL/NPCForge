@@ -1,0 +1,34 @@
+[
+  {
+    "value": "sanguine",
+    "weight": 18
+  },
+  {
+    "value": "choleric",
+    "weight": 16
+  },
+  {
+    "value": "melancholic",
+    "weight": 16
+  },
+  {
+    "value": "phlegmatic",
+    "weight": 16
+  },
+  {
+    "value": "calm",
+    "weight": 12
+  },
+  {
+    "value": "volatile",
+    "weight": 10
+  },
+  {
+    "value": "cheerful",
+    "weight": 10
+  },
+  {
+    "value": "brooding",
+    "weight": 8
+  }
+]

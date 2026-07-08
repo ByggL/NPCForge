@@ -1,0 +1,34 @@
+[
+  {
+    "value": "village",
+    "weight": 26
+  },
+  {
+    "value": "town",
+    "weight": 24
+  },
+  {
+    "value": "city",
+    "weight": 18
+  },
+  {
+    "value": "countryside",
+    "weight": 12
+  },
+  {
+    "value": "capital",
+    "weight": 8
+  },
+  {
+    "value": "castle",
+    "weight": 4
+  },
+  {
+    "value": "homeless",
+    "weight": 4
+  },
+  {
+    "value": "abroad",
+    "weight": 4
+  }
+]

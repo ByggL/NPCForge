@@ -1,0 +1,22 @@
+[
+  {
+    "value": "heterosexual",
+    "weight": 70
+  },
+  {
+    "value": "bisexual",
+    "weight": 12
+  },
+  {
+    "value": "homosexual",
+    "weight": 10
+  },
+  {
+    "value": "asexual",
+    "weight": 5
+  },
+  {
+    "value": "pansexual",
+    "weight": 3
+  }
+]

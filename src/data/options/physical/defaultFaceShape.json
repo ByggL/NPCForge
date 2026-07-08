@@ -1,0 +1,30 @@
+[
+  {
+    "value": "oval",
+    "weight": 22
+  },
+  {
+    "value": "round",
+    "weight": 20
+  },
+  {
+    "value": "square",
+    "weight": 18
+  },
+  {
+    "value": "oblong",
+    "weight": 15
+  },
+  {
+    "value": "heart",
+    "weight": 12
+  },
+  {
+    "value": "diamond",
+    "weight": 8
+  },
+  {
+    "value": "angular",
+    "weight": 5
+  }
+]

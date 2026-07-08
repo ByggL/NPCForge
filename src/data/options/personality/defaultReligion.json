@@ -1,0 +1,30 @@
+[
+  {
+    "value": "devout",
+    "weight": 20
+  },
+  {
+    "value": "faithful",
+    "weight": 25
+  },
+  {
+    "value": "agnostic",
+    "weight": 18
+  },
+  {
+    "value": "superstitious",
+    "weight": 15
+  },
+  {
+    "value": "atheist",
+    "weight": 10
+  },
+  {
+    "value": "zealot",
+    "weight": 7
+  },
+  {
+    "value": "heretic",
+    "weight": 5
+  }
+]

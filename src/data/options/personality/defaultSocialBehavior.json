@@ -1,0 +1,34 @@
+[
+  {
+    "value": "friendly",
+    "weight": 18
+  },
+  {
+    "value": "reserved",
+    "weight": 18
+  },
+  {
+    "value": "awkward",
+    "weight": 12
+  },
+  {
+    "value": "charming",
+    "weight": 12
+  },
+  {
+    "value": "talkative",
+    "weight": 12
+  },
+  {
+    "value": "aloof",
+    "weight": 10
+  },
+  {
+    "value": "aggressive",
+    "weight": 10
+  },
+  {
+    "value": "manipulative",
+    "weight": 8
+  }
+]

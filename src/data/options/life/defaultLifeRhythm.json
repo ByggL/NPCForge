@@ -1,0 +1,18 @@
+[
+  {
+    "value": "diurnal",
+    "weight": 65
+  },
+  {
+    "value": "nocturnal",
+    "weight": 18
+  },
+  {
+    "value": "crepuscular",
+    "weight": 10
+  },
+  {
+    "value": "erratic",
+    "weight": 7
+  }
+]

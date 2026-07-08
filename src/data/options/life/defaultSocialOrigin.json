@@ -1,0 +1,30 @@
+[
+  {
+    "value": "commoner",
+    "weight": 35
+  },
+  {
+    "value": "poor",
+    "weight": 22
+  },
+  {
+    "value": "merchant-class",
+    "weight": 15
+  },
+  {
+    "value": "wealthy",
+    "weight": 10
+  },
+  {
+    "value": "destitute",
+    "weight": 8
+  },
+  {
+    "value": "noble",
+    "weight": 6
+  },
+  {
+    "value": "outcast",
+    "weight": 4
+  }
+]

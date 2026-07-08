@@ -1,0 +1,22 @@
+[
+  {
+    "value": "thin",
+    "weight": 20
+  },
+  {
+    "value": "average",
+    "weight": 30
+  },
+  {
+    "value": "full",
+    "weight": 20
+  },
+  {
+    "value": "wide",
+    "weight": 15
+  },
+  {
+    "value": "small",
+    "weight": 15
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "value": "pale",
+    "weight": 12
+  },
+  {
+    "value": "fair",
+    "weight": 22
+  },
+  {
+    "value": "olive",
+    "weight": 18
+  },
+  {
+    "value": "tan",
+    "weight": 18
+  },
+  {
+    "value": "brown",
+    "weight": 15
+  },
+  {
+    "value": "dark",
+    "weight": 10
+  },
+  {
+    "value": "ebony",
+    "weight": 5
+  }
+]

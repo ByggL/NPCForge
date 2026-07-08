@@ -1,0 +1,22 @@
+[
+  {
+    "value": "none",
+    "weight": 60
+  },
+  {
+    "value": "light",
+    "weight": 20
+  },
+  {
+    "value": "natural",
+    "weight": 10
+  },
+  {
+    "value": "heavy",
+    "weight": 7
+  },
+  {
+    "value": "ceremonial",
+    "weight": 3
+  }
+]

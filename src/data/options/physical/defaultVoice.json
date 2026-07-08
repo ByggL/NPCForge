@@ -1,0 +1,34 @@
+[
+  {
+    "value": "soft",
+    "weight": 16
+  },
+  {
+    "value": "average",
+    "weight": 20
+  },
+  {
+    "value": "deep",
+    "weight": 16
+  },
+  {
+    "value": "raspy",
+    "weight": 12
+  },
+  {
+    "value": "high-pitched",
+    "weight": 12
+  },
+  {
+    "value": "melodic",
+    "weight": 10
+  },
+  {
+    "value": "gruff",
+    "weight": 8
+  },
+  {
+    "value": "monotone",
+    "weight": 6
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "value": "greedy",
+    "weight": 12
+  },
+  {
+    "value": "arrogant",
+    "weight": 12
+  },
+  {
+    "value": "stubborn",
+    "weight": 12
+  },
+  {
+    "value": "cowardly",
+    "weight": 10
+  },
+  {
+    "value": "lazy",
+    "weight": 10
+  },
+  {
+    "value": "deceitful",
+    "weight": 10
+  },
+  {
+    "value": "jealous",
+    "weight": 10
+  },
+  {
+    "value": "reckless",
+    "weight": 10
+  },
+  {
+    "value": "cruel",
+    "weight": 6
+  }
+]

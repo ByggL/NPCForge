@@ -1,0 +1,26 @@
+[
+  {
+    "value": "none",
+    "weight": 55
+  },
+  {
+    "value": "ears",
+    "weight": 25
+  },
+  {
+    "value": "nose",
+    "weight": 8
+  },
+  {
+    "value": "lip",
+    "weight": 5
+  },
+  {
+    "value": "eyebrow",
+    "weight": 4
+  },
+  {
+    "value": "multiple",
+    "weight": 3
+  }
+]

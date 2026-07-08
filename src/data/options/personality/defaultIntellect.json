@@ -1,0 +1,26 @@
+[
+  {
+    "value": "dull",
+    "weight": 8
+  },
+  {
+    "value": "simple",
+    "weight": 18
+  },
+  {
+    "value": "average",
+    "weight": 40
+  },
+  {
+    "value": "clever",
+    "weight": 20
+  },
+  {
+    "value": "brilliant",
+    "weight": 10
+  },
+  {
+    "value": "genius",
+    "weight": 4
+  }
+]

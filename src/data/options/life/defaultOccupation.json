@@ -1,0 +1,54 @@
+[
+  {
+    "value": "none",
+    "weight": 12
+  },
+  {
+    "value": "farmer",
+    "weight": 15
+  },
+  {
+    "value": "laborer",
+    "weight": 12
+  },
+  {
+    "value": "merchant",
+    "weight": 10
+  },
+  {
+    "value": "soldier",
+    "weight": 10
+  },
+  {
+    "value": "servant",
+    "weight": 8
+  },
+  {
+    "value": "blacksmith",
+    "weight": 7
+  },
+  {
+    "value": "hunter",
+    "weight": 7
+  },
+  {
+    "value": "healer",
+    "weight": 6
+  },
+  {
+    "value": "scholar",
+    "weight": 5
+  },
+  {
+    "value": "thief",
+    "weight": 5
+  },
+  {
+    "value": "priest",
+    "weight": 5
+  },
+  {
+    "value": "noble",
+    "weight": 4
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "value": "none",
+    "weight": 10
+  },
+  {
+    "value": "crafting",
+    "weight": 12
+  },
+  {
+    "value": "music",
+    "weight": 12
+  },
+  {
+    "value": "drinking",
+    "weight": 12
+  },
+  {
+    "value": "gambling",
+    "weight": 10
+  },
+  {
+    "value": "hunting",
+    "weight": 10
+  },
+  {
+    "value": "reading",
+    "weight": 10
+  },
+  {
+    "value": "gardening",
+    "weight": 8
+  },
+  {
+    "value": "collecting",
+    "weight": 8
+  },
+  {
+    "value": "fighting",
+    "weight": 8
+  }
+]

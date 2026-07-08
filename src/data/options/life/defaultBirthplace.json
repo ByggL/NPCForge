@@ -1,0 +1,30 @@
+[
+  {
+    "value": "village",
+    "weight": 30
+  },
+  {
+    "value": "town",
+    "weight": 25
+  },
+  {
+    "value": "city",
+    "weight": 18
+  },
+  {
+    "value": "countryside",
+    "weight": 12
+  },
+  {
+    "value": "capital",
+    "weight": 6
+  },
+  {
+    "value": "slums",
+    "weight": 6
+  },
+  {
+    "value": "wilderness",
+    "weight": 3
+  }
+]

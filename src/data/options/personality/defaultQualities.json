@@ -1,0 +1,38 @@
+[
+  {
+    "value": "honest",
+    "weight": 12
+  },
+  {
+    "value": "brave",
+    "weight": 12
+  },
+  {
+    "value": "loyal",
+    "weight": 12
+  },
+  {
+    "value": "generous",
+    "weight": 10
+  },
+  {
+    "value": "patient",
+    "weight": 10
+  },
+  {
+    "value": "disciplined",
+    "weight": 10
+  },
+  {
+    "value": "compassionate",
+    "weight": 10
+  },
+  {
+    "value": "witty",
+    "weight": 8
+  },
+  {
+    "value": "humble",
+    "weight": 8
+  }
+]

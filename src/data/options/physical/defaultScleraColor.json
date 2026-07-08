@@ -1,0 +1,18 @@
+[
+  {
+    "value": "white",
+    "weight": 80
+  },
+  {
+    "value": "bloodshot",
+    "weight": 8
+  },
+  {
+    "value": "yellowish",
+    "weight": 7
+  },
+  {
+    "value": "grey",
+    "weight": 5
+  }
+]

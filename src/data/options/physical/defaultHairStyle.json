@@ -1,0 +1,34 @@
+[
+  {
+    "value": "short",
+    "weight": 25
+  },
+  {
+    "value": "long",
+    "weight": 20
+  },
+  {
+    "value": "tied-back",
+    "weight": 15
+  },
+  {
+    "value": "braided",
+    "weight": 10
+  },
+  {
+    "value": "ponytail",
+    "weight": 10
+  },
+  {
+    "value": "curly",
+    "weight": 10
+  },
+  {
+    "value": "shaved",
+    "weight": 6
+  },
+  {
+    "value": "bald",
+    "weight": 4
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "value": "none",
+    "weight": 65
+  },
+  {
+    "value": "small",
+    "weight": 15
+  },
+  {
+    "value": "tribal",
+    "weight": 8
+  },
+  {
+    "value": "sleeve",
+    "weight": 6
+  },
+  {
+    "value": "facial",
+    "weight": 3
+  },
+  {
+    "value": "full-body",
+    "weight": 3
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "value": "none",
+    "weight": 60
+  },
+  {
+    "value": "scar",
+    "weight": 12
+  },
+  {
+    "value": "limp",
+    "weight": 6
+  },
+  {
+    "value": "missing-tooth",
+    "weight": 6
+  },
+  {
+    "value": "burn-mark",
+    "weight": 5
+  },
+  {
+    "value": "missing-finger",
+    "weight": 5
+  },
+  {
+    "value": "heterochromia",
+    "weight": 4
+  },
+  {
+    "value": "missing-eye",
+    "weight": 2
+  }
+]

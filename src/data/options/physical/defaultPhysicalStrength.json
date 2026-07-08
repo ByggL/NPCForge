@@ -1,0 +1,26 @@
+[
+  {
+    "value": "frail",
+    "weight": 6
+  },
+  {
+    "value": "weak",
+    "weight": 16
+  },
+  {
+    "value": "average",
+    "weight": 38
+  },
+  {
+    "value": "strong",
+    "weight": 24
+  },
+  {
+    "value": "powerful",
+    "weight": 12
+  },
+  {
+    "value": "herculean",
+    "weight": 4
+  }
+]

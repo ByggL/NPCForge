@@ -1,0 +1,26 @@
+[
+  {
+    "value": "almond",
+    "weight": 25
+  },
+  {
+    "value": "round",
+    "weight": 22
+  },
+  {
+    "value": "hooded",
+    "weight": 15
+  },
+  {
+    "value": "monolid",
+    "weight": 15
+  },
+  {
+    "value": "deep-set",
+    "weight": 13
+  },
+  {
+    "value": "wide",
+    "weight": 10
+  }
+]

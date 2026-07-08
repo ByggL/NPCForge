@@ -1,0 +1,38 @@
+[
+  {
+    "value": "lawful-good",
+    "weight": 8
+  },
+  {
+    "value": "neutral-good",
+    "weight": 10
+  },
+  {
+    "value": "chaotic-good",
+    "weight": 8
+  },
+  {
+    "value": "lawful-neutral",
+    "weight": 10
+  },
+  {
+    "value": "true-neutral",
+    "weight": 14
+  },
+  {
+    "value": "chaotic-neutral",
+    "weight": 12
+  },
+  {
+    "value": "lawful-evil",
+    "weight": 7
+  },
+  {
+    "value": "neutral-evil",
+    "weight": 7
+  },
+  {
+    "value": "chaotic-evil",
+    "weight": 6
+  }
+]

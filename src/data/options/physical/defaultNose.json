@@ -1,0 +1,26 @@
+[
+  {
+    "value": "straight",
+    "weight": 28
+  },
+  {
+    "value": "broad",
+    "weight": 18
+  },
+  {
+    "value": "aquiline",
+    "weight": 15
+  },
+  {
+    "value": "button",
+    "weight": 15
+  },
+  {
+    "value": "crooked",
+    "weight": 12
+  },
+  {
+    "value": "hooked",
+    "weight": 12
+  }
+]

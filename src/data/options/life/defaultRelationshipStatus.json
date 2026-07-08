@@ -1,0 +1,26 @@
+[
+  {
+    "value": "single",
+    "weight": 35
+  },
+  {
+    "value": "married",
+    "weight": 35
+  },
+  {
+    "value": "courting",
+    "weight": 12
+  },
+  {
+    "value": "widowed",
+    "weight": 8
+  },
+  {
+    "value": "divorced",
+    "weight": 6
+  },
+  {
+    "value": "complicated",
+    "weight": 4
+  }
+]

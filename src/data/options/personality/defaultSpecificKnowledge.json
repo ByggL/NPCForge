@@ -1,0 +1,38 @@
+[
+  {
+    "value": "none",
+    "weight": 30
+  },
+  {
+    "value": "streetwise",
+    "weight": 12
+  },
+  {
+    "value": "herbalism",
+    "weight": 10
+  },
+  {
+    "value": "warfare",
+    "weight": 10
+  },
+  {
+    "value": "history",
+    "weight": 8
+  },
+  {
+    "value": "arcana",
+    "weight": 8
+  },
+  {
+    "value": "medicine",
+    "weight": 8
+  },
+  {
+    "value": "engineering",
+    "weight": 6
+  },
+  {
+    "value": "navigation",
+    "weight": 6
+  }
+]

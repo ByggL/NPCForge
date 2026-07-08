@@ -1,0 +1,30 @@
+[
+  {
+    "value": "average",
+    "weight": 25
+  },
+  {
+    "value": "thick",
+    "weight": 20
+  },
+  {
+    "value": "thin",
+    "weight": 15
+  },
+  {
+    "value": "straight",
+    "weight": 15
+  },
+  {
+    "value": "arched",
+    "weight": 12
+  },
+  {
+    "value": "bushy",
+    "weight": 8
+  },
+  {
+    "value": "sparse",
+    "weight": 5
+  }
+]

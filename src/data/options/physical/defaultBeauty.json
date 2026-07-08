@@ -1,0 +1,26 @@
+[
+  {
+    "value": "hideous",
+    "weight": 4
+  },
+  {
+    "value": "plain",
+    "weight": 18
+  },
+  {
+    "value": "average",
+    "weight": 40
+  },
+  {
+    "value": "attractive",
+    "weight": 22
+  },
+  {
+    "value": "beautiful",
+    "weight": 12
+  },
+  {
+    "value": "stunning",
+    "weight": 4
+  }
+]

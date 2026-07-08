@@ -1,0 +1,30 @@
+[
+  {
+    "value": "hearty",
+    "weight": 28
+  },
+  {
+    "value": "frugal",
+    "weight": 25
+  },
+  {
+    "value": "refined",
+    "weight": 15
+  },
+  {
+    "value": "erratic",
+    "weight": 12
+  },
+  {
+    "value": "gluttonous",
+    "weight": 8
+  },
+  {
+    "value": "vegetarian",
+    "weight": 7
+  },
+  {
+    "value": "ascetic",
+    "weight": 5
+  }
+]

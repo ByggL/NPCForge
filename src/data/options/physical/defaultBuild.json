@@ -1,0 +1,26 @@
+[
+  {
+    "value": "slim",
+    "weight": 20
+  },
+  {
+    "value": "average",
+    "weight": 30
+  },
+  {
+    "value": "athletic",
+    "weight": 18
+  },
+  {
+    "value": "stocky",
+    "weight": 15
+  },
+  {
+    "value": "heavyset",
+    "weight": 10
+  },
+  {
+    "value": "lanky",
+    "weight": 7
+  }
+]

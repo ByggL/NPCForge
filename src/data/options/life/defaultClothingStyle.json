@@ -1,0 +1,34 @@
+[
+  {
+    "value": "simple",
+    "weight": 30
+  },
+  {
+    "value": "practical",
+    "weight": 25
+  },
+  {
+    "value": "fashionable",
+    "weight": 12
+  },
+  {
+    "value": "uniform",
+    "weight": 10
+  },
+  {
+    "value": "rags",
+    "weight": 8
+  },
+  {
+    "value": "luxurious",
+    "weight": 6
+  },
+  {
+    "value": "religious",
+    "weight": 5
+  },
+  {
+    "value": "flamboyant",
+    "weight": 4
+  }
+]

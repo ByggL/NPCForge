@@ -1,0 +1,34 @@
+[
+  {
+    "value": "none",
+    "weight": 55
+  },
+  {
+    "value": "anxiety",
+    "weight": 12
+  },
+  {
+    "value": "phobia",
+    "weight": 8
+  },
+  {
+    "value": "trauma",
+    "weight": 8
+  },
+  {
+    "value": "paranoia",
+    "weight": 6
+  },
+  {
+    "value": "depression",
+    "weight": 6
+  },
+  {
+    "value": "addiction",
+    "weight": 6
+  },
+  {
+    "value": "delusions",
+    "weight": 3
+  }
+]

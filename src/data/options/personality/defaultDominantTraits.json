@@ -1,0 +1,42 @@
+[
+  {
+    "value": "ambitious",
+    "weight": 12
+  },
+  {
+    "value": "cautious",
+    "weight": 12
+  },
+  {
+    "value": "loyal",
+    "weight": 12
+  },
+  {
+    "value": "brave",
+    "weight": 12
+  },
+  {
+    "value": "cunning",
+    "weight": 10
+  },
+  {
+    "value": "honest",
+    "weight": 10
+  },
+  {
+    "value": "proud",
+    "weight": 10
+  },
+  {
+    "value": "curious",
+    "weight": 10
+  },
+  {
+    "value": "stubborn",
+    "weight": 10
+  },
+  {
+    "value": "kind",
+    "weight": 10
+  }
+]

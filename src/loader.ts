@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { join } from "path";
+import { basename, join } from "path";
 import { AttributeWithOptions } from "./attribute";
 import { Attribute, AttributeSchema, Option, OptionFileSchema } from "./schemas/attribute.schema";
 
@@ -8,6 +8,7 @@ function readAndParseJsonFile(filename: string) {
   return JSON.parse(jsonData.toString());
 }
 
+// lists every file under `dir`, recursing into group subfolders (physical/personality/life)
 function listFiles(dir: string): string[] {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
 
@@ -20,14 +21,7 @@ function listFiles(dir: string): string[] {
 export function loadAttributes(dir: string): Attribute[] {
   const files = listFiles(dir).filter((f) => f.endsWith(".json"));
 
-  const correctFiles = files.filter((file) => {
-    const index = file.lastIndexOf("\\");
-    const defaultOptionsFilename = `default${capitalize(file.substring(index + 1))}`;
-    // console.log(defaultOptionsFilename);
-    return fs.existsSync(join(process.cwd(), `/src/data/options/${defaultOptionsFilename}`));
-  });
-
-  return correctFiles.flatMap((file) => {
+  return files.flatMap((file) => {
     const raw = JSON.parse(fs.readFileSync(file, "utf-8"));
     const result = AttributeSchema.safeParse(raw);
 
@@ -53,11 +47,31 @@ export function createAttributeInstances(): Record<string, AttributeWithOptions>
 
 const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1);
 
+// indexes every option file by its basename (e.g. "defaultRace.json") across the group subfolders
+function indexOptionFiles(dir: string): Map<string, string> {
+  const index = new Map<string, string>();
+  listFiles(dir)
+    .filter((f) => f.endsWith(".json"))
+    .forEach((full) => index.set(basename(full), full));
+  return index;
+}
+
 export function populateOptions(attributeInstances: Record<string, AttributeWithOptions>) {
+  const optionFiles = indexOptionFiles(join(process.cwd(), "/src/data/options"));
+
   Object.values(attributeInstances).forEach((attributeInstance: AttributeWithOptions) => {
     attributeInstance.options.forEach((optionRequest) => {
       const filename = `${optionRequest}${capitalize(attributeInstance.key)}.json`;
-      const raw = JSON.parse(fs.readFileSync(join(process.cwd(), `/src/data/options/${filename}`), "utf-8"));
+      const fullPath = optionFiles.get(filename);
+
+      // Some attributes legitimately have no option file (e.g. age/height/weight are numeric
+      // and generated procedurally). Skip them instead of crashing.
+      if (!fullPath) {
+        console.warn(`OPTIONS : aucun fichier "${filename}" — attribut "${attributeInstance.key}" laissé sans options.`);
+        return;
+      }
+
+      const raw = JSON.parse(fs.readFileSync(fullPath, "utf-8"));
       const result = OptionFileSchema.safeParse(raw);
 
       if (!result.success) {

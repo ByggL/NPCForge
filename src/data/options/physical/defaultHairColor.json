@@ -1,0 +1,30 @@
+[
+  {
+    "value": "black",
+    "weight": 25
+  },
+  {
+    "value": "brown",
+    "weight": 28
+  },
+  {
+    "value": "blonde",
+    "weight": 15
+  },
+  {
+    "value": "auburn",
+    "weight": 8
+  },
+  {
+    "value": "red",
+    "weight": 6
+  },
+  {
+    "value": "grey",
+    "weight": 10
+  },
+  {
+    "value": "white",
+    "weight": 8
+  }
+]

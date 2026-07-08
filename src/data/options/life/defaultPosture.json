@@ -1,0 +1,34 @@
+[
+  {
+    "value": "upright",
+    "weight": 25
+  },
+  {
+    "value": "relaxed",
+    "weight": 22
+  },
+  {
+    "value": "slouched",
+    "weight": 18
+  },
+  {
+    "value": "stiff",
+    "weight": 12
+  },
+  {
+    "value": "imposing",
+    "weight": 8
+  },
+  {
+    "value": "timid",
+    "weight": 8
+  },
+  {
+    "value": "graceful",
+    "weight": 5
+  },
+  {
+    "value": "limping",
+    "weight": 2
+  }
+]

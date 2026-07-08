@@ -1,0 +1,22 @@
+[
+  {
+    "value": "rounded",
+    "weight": 55
+  },
+  {
+    "value": "pointed",
+    "weight": 15
+  },
+  {
+    "value": "small",
+    "weight": 12
+  },
+  {
+    "value": "large",
+    "weight": 12
+  },
+  {
+    "value": "protruding",
+    "weight": 6
+  }
+]

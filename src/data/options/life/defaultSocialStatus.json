@@ -1,0 +1,30 @@
+[
+  {
+    "value": "commoner",
+    "weight": 35
+  },
+  {
+    "value": "poor",
+    "weight": 20
+  },
+  {
+    "value": "comfortable",
+    "weight": 20
+  },
+  {
+    "value": "wealthy",
+    "weight": 10
+  },
+  {
+    "value": "outcast",
+    "weight": 6
+  },
+  {
+    "value": "elite",
+    "weight": 5
+  },
+  {
+    "value": "noble",
+    "weight": 4
+  }
+]
