@@ -10,13 +10,15 @@ export type AttributeGroup = Record<string, AttributeWithOptions>;
 
 export class AttributeWithOptions {
   key: string;
+  type?: string;
   dependsOn: string[];
-  options: string[];
+  options: (string | number)[];
   rules: Rule[];
   optionsValues: Option[]; // all options stored as flat list, options coming from specifically names JSON file (ie. not "default") will have the specific name as bonus pool
 
   constructor(attribute: Attribute, options?: Option[]) {
     this.key = attribute.key;
+    this.type = attribute.type;
     this.dependsOn = attribute.dependsOn;
     this.options = attribute.options;
     this.rules = attribute.rules;

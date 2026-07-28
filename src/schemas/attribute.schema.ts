@@ -49,6 +49,14 @@ export const EffectSchema = z.discriminatedUnion("type", [
     type: z.literal("use_pools"),
     pools: z.array(PoolRefSchema),
   }),
+  z.object({
+    type: z.literal("change_min"),
+    value: z.number(),
+  }),
+  z.object({
+    type: z.literal("change_max"),
+    value: z.number(),
+  }),
 ]);
 
 // --- Rule ---
@@ -60,8 +68,9 @@ export const RuleSchema = z.object({
 // --- Attribute ---
 export const AttributeSchema = z.object({
   key: z.string(),
+  type: z.optional(z.string()),
   dependsOn: z.array(z.string()),
-  options: z.array(z.string()),
+  options: z.array(z.union([z.string(), z.number()])),
   rules: z.array(RuleSchema),
 });
 

@@ -26,6 +26,12 @@ export function effectToString(effect: Effect): string {
       return `remove_options [${effect.options.map((o) => o.value).join(", ")}]`;
     case "use_pools":
       return `use_pools [${effect.pools.map((p) => `${p.pool}${p.weight ? `:${p.weight}` : ""}`).join(", ")}]`;
+    case "change_min":
+      return `change_min → ${effect.value}`;
+    case "change_min":
+      return `change_max → ${effect.value}`;
+    default:
+      return "";
   }
 }
 

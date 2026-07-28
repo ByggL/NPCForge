@@ -1,6 +1,7 @@
 {
   "key": "weight",
+  "type": "range",
   "dependsOn": ["build", "height"],
-  "options": ["default"],
+  "options": [30, 100],
   "rules": []
 }

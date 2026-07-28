@@ -1,18 +1,23 @@
 import { AttributeWithOptions } from "./attribute";
-import { pickRandomOption } from "./random";
+import { pickRandomOption, randomIntFromRange } from "./random";
 import { Condition, OptionValue } from "./schemas/attribute.schema";
 
 export type GenerationContext = Map<string, OptionValue>;
 
+function valuePick(attribute: AttributeWithOptions) {
+  return attribute.type === "range" ? randomIntFromRange(attribute.options as number[]) : pickRandomOption(attribute.optionsValues);
+}
+
 export function generateAttribute(attribute: AttributeWithOptions, CTX: GenerationContext) {
   // for root attributes or simple attributes without rules, directly pick random option
   if (attribute.dependsOn.length === 0 || attribute.rules.length === 0) {
-    CTX.set(attribute.key, pickRandomOption(attribute.optionsValues));
+    CTX.set(attribute.key, valuePick(attribute));
     return;
   }
 
   // else resolve rules before picking
-  CTX.set(attribute.key, resolveRules(attribute, CTX));
+  if (attribute.type === "range") CTX.set(attribute.key, resolveRangeRules(attribute, CTX));
+  else CTX.set(attribute.key, resolveOptionsRules(attribute, CTX));
 }
 
 function matchesCondition(conditions: Condition, CTX: GenerationContext): boolean {
@@ -30,7 +35,7 @@ function matchesCondition(conditions: Condition, CTX: GenerationContext): boolea
   });
 }
 
-function resolveRules(attribute: AttributeWithOptions, CTX: GenerationContext): string | number {
+function resolveOptionsRules(attribute: AttributeWithOptions, CTX: GenerationContext): string | number {
   let options = structuredClone(attribute.optionsValues);
 
   for (const rule of attribute.rules) {
@@ -71,5 +76,24 @@ function resolveRules(attribute: AttributeWithOptions, CTX: GenerationContext): 
     }
   }
 
-  return pickRandomOption(options);
+  return valuePick(attribute);
+}
+
+function resolveRangeRules(attribute: AttributeWithOptions, CTX: GenerationContext): string | number {
+  let [min, max] = structuredClone(attribute.options as number[]);
+
+  for (const rule of attribute.rules) {
+    if (!matchesCondition(rule.when, CTX)) continue;
+
+    switch (rule.effect.type) {
+      case "change_min":
+        min = rule.effect.value;
+        break;
+      case "change_max":
+        max = rule.effect.value;
+        break;
+    }
+  }
+
+  return valuePick(attribute);
 }

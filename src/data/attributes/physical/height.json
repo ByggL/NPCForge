@@ -1,6 +1,7 @@
 {
   "key": "height",
+  "type": "range",
   "dependsOn": ["race", "gender", "age"],
-  "options": ["default"],
+  "options": [110, 220],
   "rules": []
 }

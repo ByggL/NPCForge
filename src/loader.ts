@@ -60,6 +60,8 @@ export function populateOptions(attributeInstances: Record<string, AttributeWith
   const optionFiles = indexOptionFiles(join(process.cwd(), "/src/data/options"));
 
   Object.values(attributeInstances).forEach((attributeInstance: AttributeWithOptions) => {
+    if (attributeInstance.type === "range") return;
+
     attributeInstance.options.forEach((optionRequest) => {
       const filename = `${optionRequest}${capitalize(attributeInstance.key)}.json`;
       const fullPath = optionFiles.get(filename);
@@ -81,7 +83,7 @@ export function populateOptions(attributeInstances: Record<string, AttributeWith
       const optionsGroup: Option[] = result.data || [];
 
       optionsGroup.forEach((option) => {
-        option.pools ? option.pools.push(optionRequest) : (option.pools = [optionRequest]);
+        option.pools ? option.pools.push(optionRequest as string) : (option.pools = [optionRequest as string]);
       });
 
       attributeInstance.optionsValues.push(...optionsGroup);

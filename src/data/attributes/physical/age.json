@@ -1,6 +1,7 @@
 {
   "key": "age",
+  "type": "range",
   "dependsOn": ["race"],
-  "options": ["default"],
+  "options": [5, 80],
   "rules": []
 }
