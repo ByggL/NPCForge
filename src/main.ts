@@ -2,7 +2,7 @@ import { AttributeGroup } from "./attribute";
 import { buildAttributesProcessingOrder } from "./dependencies";
 import { generateAttribute, GenerationContext } from "./generate";
 import { createAttributeInstances, populateOptions } from "./loader";
-import { printMap } from "./printer";
+import { printGen } from "./printer";
 
 function main() {
   let ATTRIBUTES: AttributeGroup;
@@ -19,7 +19,7 @@ function main() {
     generateAttribute(ATTRIBUTES[attributeToProcess], GENERATION_CONTEXT);
   }
 
-  printMap(GENERATION_CONTEXT);
+  printGen(GENERATION_CONTEXT);
 }
 
 main();

@@ -1,5 +1,8 @@
 import { DependencyGraph } from "./dependencies";
+import { GenerationContext } from "./generate";
 import type { Condition, Effect } from "./schemas/attribute.schema";
+
+const capitalize = <T extends string>(s: T) => (s[0].toUpperCase() + s.slice(1)) as string;
 
 export function conditionToString(cond: Condition): string {
   const parts = Object.entries(cond).map(([key, val]) => {
@@ -66,7 +69,22 @@ export function printDependencyTree(graph: DependencyGraph): void {
 export function printMap(map: Map<string, string | number>) {
   let obj: { [key: string]: string | number } = {};
 
-  map.forEach((value, key) => (obj[key] = value));
+  map.forEach((value, key) => (obj[key] = formatValue(value)));
 
   console.log(JSON.stringify(obj, null, 4));
+}
+
+function formatValue(value: string | number): string {
+  if (typeof value === "number") return value.toString();
+
+  return capitalize(value).replace("-", " ");
+}
+
+function formatKey(key: string): string {
+  const result = key.replace(/([A-Z])/g, " $1").toLowerCase();
+  return result.charAt(0).toUpperCase() + result.slice(1);
+}
+
+export function printGen(generation: GenerationContext) {
+  generation.forEach((value, key) => console.log(`${formatKey(key)}: ${formatValue(value)}`));
 }
