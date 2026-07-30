@@ -1,7 +1,7 @@
 import { AttributeWithOptions } from "../attribute";
 import { buildAttributesProcessingOrder, evaluateDependencies } from "../dependencies";
+import { printDependencyTree } from "../display/printer";
 import { createAttributeInstances, populateOptions } from "../loader";
-import { printDependencyTree } from "../printer";
 
 function main() {
   var ATTRIBUTES: Record<string, AttributeWithOptions>;

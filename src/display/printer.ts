@@ -1,6 +1,6 @@
-import { DependencyGraph } from "./dependencies";
-import { GenerationContext } from "./generate";
-import type { Condition, Effect } from "./schemas/attribute.schema";
+import { DependencyGraph } from "../dependencies";
+import { GenerationContext } from "../generate";
+import type { Condition, Effect } from "../schemas/attribute.schema";
 
 const capitalize = <T extends string>(s: T) => (s[0].toUpperCase() + s.slice(1)) as string;
 

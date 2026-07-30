@@ -13,6 +13,7 @@
 
 ## Display
 
+- voir ce qu'il se fait déjà dans les générateurs existants en terme de création de phrases descriptives complètes à partir d'attributs générés
 - printer console un peu plus joli pour les picks
 
 # DONE

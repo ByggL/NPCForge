@@ -1,8 +1,8 @@
 import { AttributeGroup } from "./attribute";
 import { buildAttributesProcessingOrder } from "./dependencies";
+import { printGen } from "./display/printer";
 import { generateAttribute, GenerationContext } from "./generate";
 import { createAttributeInstances, populateOptions } from "./loader";
-import { printGen } from "./printer";
 
 function main() {
   let ATTRIBUTES: AttributeGroup;

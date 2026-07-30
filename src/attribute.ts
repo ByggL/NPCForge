@@ -1,4 +1,4 @@
-import { conditionToString, effectToString } from "./printer";
+import { conditionToString, effectToString } from "./display/printer";
 import { Attribute, Option, Rule } from "./schemas/attribute.schema";
 
 export type AttributeOptions = {

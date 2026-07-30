@@ -1,27 +1,27 @@
-import { GenerationContext } from "./generate";
+import { GenerationContext } from "../generate";
 
-type Pronouns = {
-  personal: "he" | "she" | "they";
-  object: "him" | "her" | "them";
-  possessive: "his" | "her" | "their";
+export type Pronouns = {
+  pers: "he" | "she" | "they";
+  obj: "him" | "her" | "them";
+  poss: "his" | "her" | "their";
 };
 
 const MASCULINE_PRONOUNS: Pronouns = {
-  personal: "he",
-  object: "him",
-  possessive: "his",
+  pers: "he",
+  obj: "him",
+  poss: "his",
 };
 
 const FEMININE_PRONOUNS: Pronouns = {
-  personal: "she",
-  object: "her",
-  possessive: "her",
+  pers: "she",
+  obj: "her",
+  poss: "her",
 };
 
 const NEUTRAL_PRONOUNS: Pronouns = {
-  personal: "they",
-  object: "them",
-  possessive: "their",
+  pers: "they",
+  obj: "them",
+  poss: "their",
 };
 
 export function pronouns(CTX: GenerationContext): Pronouns {
