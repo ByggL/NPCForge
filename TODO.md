@@ -4,6 +4,7 @@
 
 - remplir les JSON d'attributs et d'options (ouille) (attributs créés, règles à faire)
 - ignorer les attributs qui n'ont pas de fichier(s) d'options correspondant (temporaire) ✅
+- templates JSON de phrases `{firstname} {lastname} is a {age} years old {gender} {race}.`
 
 ## Attributs
 
@@ -15,6 +16,11 @@
 
 - voir ce qu'il se fait déjà dans les générateurs existants en terme de création de phrases descriptives complètes à partir d'attributs générés
 - printer console un peu plus joli pour les picks
+- parser templates JSON de phrases
+
+## Autres
+
+- Paramètres de génération (tags requis, tags exclus, etc etc etc etc.......)
 
 # DONE
 
